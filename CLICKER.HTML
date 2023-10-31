@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+  <img
+    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSomGMQVwNlwxM3mp5Fb9B5KvNnpN5aTegC2Bvvd7kKUbq5S3Rzg-Kb5_6WvuRlyrWxWEw:https://static.wikia.nocookie.net/kylarsroleplay/images/c/c3/Waroftheworlds-tripod.jpg/revision/latest%3Fcb%3D20180318052439&usqp=CAU"
+    id="thing">
+  <p id="money">score = 0</p>
+  <button>><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReKAlIaUKxRF3UUmlo23gTbZ4yqiX6FuWR16yN5vuN&s"
+      id="button"></button>
+</body>
+
+</html>
+<script>
+  var score = 0
+  var what = 1
+  var buyUpgrade = 15
+  document.getElementById("thing").addEventListener("click", addScore)
+  document.getElementById("button").addEventListener("click", upgrade)
+  function addScore() {
+    score = score + what
+    document.getElementById("money").innerText = "cool aliens " + score
+  }
+  function upgrade() {
+   what= what + 20
+    score= score - buyUpgrade
+    if(score<=0) {
+      alert("get good")
+    }
+   document.getElementById("button")
+  }
+  
+</script>
