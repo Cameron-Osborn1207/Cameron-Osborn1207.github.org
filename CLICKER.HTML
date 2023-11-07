@@ -25,10 +25,11 @@
     document.getElementById("money").innerText = "cool aliens " + score
   }
   function upgrade() {
-   what= what + 20
-    score= score - buyUpgrade
-    if(score<=0) {
-      alert("get good")
+    if(score<=15) {
+      score= score - buyUpgrade
+      what= what + 20
+      setInterval()
+      document.getElementById("money").innerText = "cool aliens " + score
     }
    document.getElementById("button")
   }
